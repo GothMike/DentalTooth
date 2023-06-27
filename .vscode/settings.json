@@ -1,0 +1,17 @@
+{
+  "AllAutocomplete.maxItemsInSingleList": 999,
+  "AllAutocomplete.languageWhitespace": {
+    "ruby": "[^\\w\\-_\\$:\\u0080-\\uFFFF]+",
+    "javascript": "[^\\w_\\$\\u0080-\\uFFFF]+",
+    "javascriptreact": "[^\\w_\\-\\$\\@\\u0080-\\uFFFF]+",
+    "typescript": "[^\\w_\\-\\$\\@\\u0080-\\uFFFF]+",
+    "php": "[^\\w_\\$\\u0080-\\uFFFF]+",
+    "css": "[^\\w\\-_\\$\\u0080-\\uFFFF]+",
+    "scss": "[^\\w\\-_\\$\\@\\u0080-\\uFFFF]+",
+    "html": "[^\\w\\-_\\$\\u0080-\\uFFFF]+",
+    "python": "[^\\w\\-_\\u0080-\\uFFFF]+",
+    "elm": "[^\\w\\-_\\u0080-\\uFFFF]+",
+    "cpp": "[^\\w_\\u0080-\\uFFFF]+",
+    "csv": "[^\\w_\\u0080-\\uFFFF \\:]+"
+  }
+}
