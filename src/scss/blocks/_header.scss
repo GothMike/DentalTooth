@@ -1,0 +1,124 @@
+.header {
+  position: fixed;
+  width: 100%;
+  height: 131px;
+  z-index: 1;
+  &__headline {
+    width: 100%;
+    height: 50px;
+    background-color: $backColor;
+  }
+  &__items {
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+    height: 100%;
+    img {
+      max-width: 25px;
+      max-height: 25px;
+      object-fit: fill;
+    }
+    &:first-child {
+      margin-right: 420px;
+    }
+  }
+  &__img {
+    margin: 0 15px;
+    max-width: 23px;
+    max-height: 23px;
+  }
+  &__hamburger {
+    display: none;
+    width: 25px;
+    height: 25px;
+    background-color: #5eb8f0;
+    border-radius: 100%;
+    span {
+      display: block;
+      background-color: #ffffff;
+      height: 1px;
+      width: 10px;
+      margin: 5px auto;
+      text-align: center;
+    }
+  }
+  &_active {
+    display: block;
+  }
+  &__navbar {
+    display: grid;
+    grid-template-columns: 170px 820px 220px;
+    grid-template-rows: 81px;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 81px;
+    background-color: #ffffff;
+  }
+  &__logo {
+    display: grid;
+    grid-template-columns: 45px 55px 55px;
+    grid-template-rows: repeat(2, 25px);
+    align-items: center;
+    justify-items: center;
+    &-img {
+      grid-row: 1 / 3;
+      grid-column: 1 / 1;
+    }
+    &-name {
+      grid-row: 1 / 1;
+      grid-column: 2 / 4;
+      color: #302d2d;
+      font-size: 20px;
+      font-family: Comfortaa;
+    }
+    &-descr {
+      grid-row: 2 / 2;
+      grid-column: 3 / 4;
+      color: #302d2d;
+      font-size: 14px;
+      font-weight: 300;
+    }
+  }
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+  }
+  &__link {
+    font-size: 18px;
+    text-align: center;
+    a {
+      color: #302d2d;
+      text-decoration: none;
+    }
+  }
+  &__overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: #5eb8f041;
+    transition: all 0.6s;
+    &_active {
+      left: 0;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  &__subline {
+    position: relative;
+    background-color: #ffffff;
+    width: 100%;
+  }
+}
