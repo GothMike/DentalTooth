@@ -47,7 +47,7 @@ function fonts() {
 function images() {
   return src(["src/img/src/**/*.*", "!src/img/src/**/*.svg"])
     .pipe(newer("src/img/dist"))
-    .pipe(avif({ quality: 50 }))
+    .pipe(avif({ quality: 90 }))
 
     .pipe(src("src/img/src/**/*.*"))
     .pipe(newer("src/img/dist"))
