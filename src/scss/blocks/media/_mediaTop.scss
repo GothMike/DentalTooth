@@ -24,7 +24,7 @@
     }
     &__img {
       img {
-        width: 350px;
+        width: 380px;
         height: 350px;
       }
     }
@@ -33,7 +33,7 @@
 
 @media (max-width: 767px) {
   .top {
-    height: 900px;
+    height: 800px;
     padding-top: 152px;
     text-align: justify;
     &__wrapper {
@@ -60,8 +60,8 @@
         flex-direction: column;
         z-index: 0;
         img {
-          width: 392.429px;
-          height: 445px;
+          width: 400px;
+          height: 350px;
         }
       }
     }
@@ -77,6 +77,14 @@
     }
     &__text {
       font-size: 13px;
+    }
+    &__img {
+      &_sm {
+        img {
+          width: 400px;
+          height: 350px;
+        }
+      }
     }
   }
 }

@@ -1,0 +1,113 @@
+.reviews {
+  height: 690px;
+  background-color: linear-gradient(to right, rgba(202, 202, 202, 0.096), rgba(50, 48, 48, 0.39));
+  background: url("../img/reviews/reviews_bg.avif") center / cover no-repeat,
+    url("../img/reviews/reviews_bg.webp") center / cover no-repeat,
+    url("../img/reviews/reviews_bg.png") center / cover no-repeat;
+  &__item {
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    width: 80%;
+    height: 509px;
+    display: flex !important;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 50px;
+  }
+  &__carousel {
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+  }
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 150px);
+    padding: 0 158px 0 121px;
+  }
+  &__title {
+    color: #302d2d;
+    font-size: 52px;
+  }
+  &__img {
+    grid-column: 1 /1;
+    grid-row: 1 / 3;
+    align-items: center;
+    justify-items: center;
+    width: 200px;
+    height: 200px;
+    img {
+      border-radius: 100%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__text {
+    padding-left: 40px;
+    color: #6b6868;
+    font-size: 18px;
+    width: 494px;
+    text-align: justify;
+    grid-column: 2 / 3;
+    grid-row: 1 / 1;
+    overflow: hidden;
+    height: 200px;
+  }
+  &__sign {
+    display: flex;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__name {
+    color: #2378c9;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  &__social {
+    display: flex;
+  }
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background: #e7e7e7;
+    margin: 0 8px;
+    img {
+      width: 60%;
+      height: 60%;
+      object-fit: cover;
+    }
+  }
+
+  .slick-prev,
+  .slick-next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -30px;
+    border: none;
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background: #8a84db;
+    img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  .slick-next {
+    left: inherit;
+    right: -30px;
+  }
+}
