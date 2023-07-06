@@ -1,0 +1,53 @@
+@media (max-width: 1200px) {
+  .recall {
+    &__table {
+      input {
+        width: 90%;
+        margin-bottom: 20px;
+      }
+    }
+    &__title {
+      color: #302d2d;
+      text-align: center;
+      font-size: 32px;
+    }
+    &__info {
+      color: #747474;
+      text-align: center;
+      font-size: 14px;
+      width: 280px;
+      height: 47px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .recall {
+    &__form,
+    &__form-modal {
+      width: 80%;
+    }
+    &__img {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .recall {
+    &__title {
+      font-size: 24px;
+    }
+    &__info {
+      width: 90%;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .recall {
+    &__title {
+      font-size: 20px;
+    }
+  }
+}

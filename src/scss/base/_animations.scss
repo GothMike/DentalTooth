@@ -1,0 +1,15 @@
+@keyframes shake {
+  25% {
+    translate: 6px 2px;
+  }
+  50% {
+    translate: -6px -2px;
+  }
+  75% {
+    translate: 6px 2px;
+  }
+}
+
+.shake {
+  animation: shake 0.3s linear;
+}

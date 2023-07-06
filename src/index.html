@@ -109,7 +109,7 @@
               <li class="header__link"><a href="#">Отзывы</a></li>
               <li class="header__link"><a href="#">Контакты</a></li>
             </ul>
-            <button class="btn__header">Получить консультацию</button>
+            <button data-modal class="btn__header">Получить консультацию</button>
           </nav>
         </div>
       </div>
@@ -117,7 +117,6 @@
       <div class="header__overlay"></div>
     </header>
     
-
     <main>
       <section class="top">
         <div class="container h-100">
@@ -135,9 +134,9 @@
                   <source srcset="img/other/intro_doctor.webp" type="image/webp" />
                   <img src="img/other/intro_doctor.png" alt="Intro_doctor" />
                 </picture>
-                <button class="btn__top btn__top_sm">Записаться на прием</button>
+                <button data-modal class="btn__top btn__top_sm">Записаться на прием</button>
               </div>
-              <button class="btn__top">Записаться на прием</button>
+              <button data-modal class="btn__top">Записаться на прием</button>
             </div>
             <div class="top__img">
               <picture>
@@ -405,17 +404,64 @@
         </div>
       </section>
       
-    </main>
-    <!-- <footer>
-      <div class="container text-center">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-          <div class="col">Column</div>
-          <div class="col">Column</div>
-          <div class="col">Column</div>
-          <div class="col">Column</div>
+      <section class="recall">
+        <div class="container h-100">
+          <div class="row align-items-center h-100">
+            <div class="col-md-12 col-lg-6">
+              <div class="recall__form">
+                <div class="recall__title">Записаться на прием</div>
+                <form id="consultation-form" class="recall__table" action="#">
+                  <input name="name" placeholder="Ваше имя" type="text" />
+                  <input name="phone" placeholder="Ваш телефон" />
+      
+                  <button class="btn__recall">Записаться на прием</button>
+                </form>
+                <p class="recall__info">
+                  Нажимая кнопку, я даю свое согласие на обработку моих персональных данных
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="recall__img">
+                <picture>
+                  <source srcset="img/other/recall_doctor.avif" type="image/avif" />
+                  <source srcset="img/other/recall_doctor.webp" type="image/webp" />
+                  <img src="img/other/recall_doctor.png" alt="recall_doctor" />
+                </picture>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
+      
+    </main>
+    <footer>
+      <!-- <footer>
+        <div class="container text-center">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+          </div>
+        </div>
+      </footer> -->
+      
+    </footer>
+    <div class="modal">
+      <div class="recall__form-modal">
+        <div data-close class="modal__close">&times;</div>
+        <div class="recall__title">Записаться на прием</div>
+        <form id="consultation-form" class="recall__table" action="#">
+          <input name="name" placeholder="Ваше имя" type="text" />
+          <input name="phone" placeholder="Ваш телефон" />
+          <button class="btn__recall">Записаться на прием</button>
+        </form>
+        <p class="recall__info">
+          Нажимая кнопку, я даю свое согласие на обработку моих персональных данных
+        </p>
       </div>
-    </footer> -->
+    </div>
     
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -426,6 +472,8 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
 </html>
