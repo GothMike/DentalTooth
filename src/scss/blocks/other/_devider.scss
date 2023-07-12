@@ -1,10 +1,14 @@
 .devider {
-  &__line {
+  &__line,
+  &__footer {
     grid-row: 2 / 2;
     grid-column: 2 /3;
     width: 46px;
     height: 1px;
     background-color: #0075be;
+  }
+  &__footer {
+    background-color: #fff;
   }
 }
 

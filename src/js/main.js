@@ -61,7 +61,7 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  validateForms("#consultation-form");
+  validateForms("[data-form]");
 
   // Маска для номера телефона
   $("input[name=phone").mask("+7 (999) 999-99-99");
@@ -69,8 +69,7 @@ window.addEventListener("DOMContentLoaded", () => {
   // Модальное окно
   const modalTrigger = document.querySelectorAll("[data-modal]"),
     modal = document.querySelector(".modal"),
-    modalCloseBtn = document.querySelector("[data-close]"),
-    modalTanks = document.querySelector(".modal-thanks");
+    modalCloseBtn = document.querySelector("[data-close]");
 
   modalTrigger.forEach((btn) => {
     btn.addEventListener("click", openModal);

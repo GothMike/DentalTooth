@@ -5,6 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dental tooth</title>
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Dental Tooth" />
+    <meta name="description" content="Лучшая клиника стоматологии по Астане! С разумными ценами!" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://test.gothmike.net/" />
+    <meta property="og:title" content="Dental Tooth" />
+    <meta
+      property="og:description"
+      content="Лучшая клиника стоматологии по Астане! С разумными ценами!"
+    />
+    <meta property="og:image" content="img/other/metateg.webp" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="http://test.gothmike.net/" />
+    <meta property="twitter:title" content="Dental Tooth" />
+    <meta
+      property="twitter:description"
+      content="Лучшая клиника стоматологии по Астане! С разумными ценами!"
+    />
+    <meta property="twitter:image" content="img/other/metateg.webp" />
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/other/Tooth_logo.webp" />
+    <link rel="apple-touch-icon" sizes="60x60" href="img/other/Tooth_logo.webp" />
+    <link rel="apple-touch-icon" sizes="72x72" href="img/other/Tooth_logo.webp" />
+    <link rel="apple-touch-icon" sizes="76x76" href="img/other/Tooth_logo.webp" />
+    <link rel="apple-touch-icon" sizes="114x114" href="img/other/Tooth_logo.webp" />
+    <link rel="apple-touch-icon" sizes="120x120" href="img/other/Tooth_logo.webp" />
+    <link rel="apple-touch-icon" sizes="144x144" href="img/other/Tooth_logo.webp" />
+    <link rel="apple-touch-icon" sizes="152x152" href="img/other/Tooth_logo.webp" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/other/Tooth_logo.webp" />
+    <link rel="icon" type="image/png" sizes="192x192" href="img/other/Tooth_logo.webp" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/other/Tooth_logo.webp" />
+    <link rel="icon" type="image/png" sizes="96x96" href="img/other/Tooth_logo.webp" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/other/Tooth_logo.webp" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="img/other/Tooth_logo.webp" />
+    <meta name="theme-color" content="#ffffff" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -51,11 +95,11 @@
                     <img src="img/svg/social/vk.svg" alt="vk" class="header__img"
                   /></a>
                 </li>
-                <li class="menu__link"><a href="#">Главная</a></li>
-                <li class="menu__link"><a href="#">Услуги</a></li>
-                <li class="menu__link"><a href="#">Наши специалисты</a></li>
-                <li class="menu__link"><a href="#">Отзывы</a></li>
-                <li class="menu__link"><a href="#">Контакты</a></li>
+                <li class="menu__link"><a href="#top">Главная</a></li>
+                <li class="menu__link"><a href="#services">Услуги</a></li>
+                <li class="menu__link"><a href="#specialists">Наши специалисты</a></li>
+                <li class="menu__link"><a href="#price">Цена</a></li>
+                <li class="menu__link"><a href="#reviews">Отзывы</a></li>
               </ul>
             </nav>
           </div>
@@ -103,11 +147,11 @@
               <div class="header__logo-descr">Клиника</div>
             </div>
             <ul class="header__links">
-              <li class="header__link"><a href="#">Главная</a></li>
-              <li class="header__link"><a href="#">Услуги</a></li>
-              <li class="header__link"><a href="#">Наши специалисты</a></li>
-              <li class="header__link"><a href="#">Отзывы</a></li>
-              <li class="header__link"><a href="#">Контакты</a></li>
+              <li class="header__link"><a href="#top">Главная</a></li>
+              <li class="header__link"><a href="#services">Услуги</a></li>
+              <li class="header__link"><a href="#specialists">Наши специалисты</a></li>
+              <li class="header__link"><a href="#price">Цена</a></li>
+              <li class="header__link"><a href="#reviews">Отзывы</a></li>
             </ul>
             <button data-modal class="btn__header">Получить консультацию</button>
           </nav>
@@ -118,7 +162,7 @@
     </header>
     
     <main>
-      <section class="top">
+      <section id="top" class="top">
         <div class="container h-100">
           <div class="top__wrapper">
             <div class="top__descr">
@@ -149,7 +193,7 @@
         </div>
       </section>
       
-      <section class="services">
+      <section id="services" class="services">
         <div class="container h-100">
           <div class="row align-items-center h-100">
             <div class="col-md-12 col-lg-6 services__item">
@@ -186,24 +230,24 @@
           <div class="row align-items-center h-100">
             <div class="advantages__item col-md-12 col-lg-4">
               <div class="advantages__img"><img src="img/svg/descr/clock_descr.svg" alt="clock" /></div>
-              <div class="advantages__title">Круглосуточная поддержка клиентов</div>
-              <div class="advantages__descr">Мы на связи с вами все 24 часа 7 дней в неделю!</div>
+              <h2 class="advantages__title">Круглосуточная поддержка клиентов</h2>
+              <h3 class="advantages__descr">Мы на связи с вами все 24 часа 7 дней в неделю!</h3>
             </div>
             <div class="advantages__item col-md-12 col-lg-4">
               <div class="advantages__img"><img src="img/svg/descr/help_descr.svg" alt="help" /></div>
-              <div class="advantages__title">Доступная стоматологическая помощь</div>
-              <div class="advantages__descr">Доступные цены и здоровые зубы для каждого!</div>
+              <h2 class="advantages__title">Доступная стоматологическая помощь</h2>
+              <h3 class="advantages__descr">Доступные цены и здоровые зубы для каждого!</h3>
             </div>
             <div class="advantages__item col-md-12 col-lg-4">
               <div class="advantages__img"><img src="img/svg/descr/team_descr.svg" alt="team" /></div>
-              <div class="advantages__title">Команда талантливых врачей</div>
-              <div class="advantages__descr">Наша команда профессионалов ждет вас!</div>
+              <h2 class="advantages__title">Команда талантливых врачей</h2>
+              <h3 class="advantages__descr">Наша команда профессионалов ждет вас!</h3>
             </div>
           </div>
         </div>
       </section>
       
-      <section class="specialists">
+      <section id="specialists" class="specialists">
         <div class="container h-100 text-center">
           <div class="specialists__main">
             <h2 class="specialists__title">Наши специалисты</h2>
@@ -263,7 +307,7 @@
         </div>
       </section>
       
-      <section class="price">
+      <section id="price" class="price">
         <div class="container h-100 text-center">
           <div class="row align-items-center h-100 price__main">
             <div class="col-lg-6">
@@ -271,30 +315,30 @@
                 <div class="price__title">Стоимость лечения от</div>
                 <div class="price__subtitle">Доступные цены на каждую процедуру</div>
                 <ul class="price__services">
-                  <il class="price__service"
-                    ><div class="price__name">Отбеливание зубов</div>
-                    <div class="price__cost">120$</div>
-                  </il>
-                  <il class="price__service"
-                    ><div class="price__name">Имплантационная стоматология</div>
-                    <div class="price__cost">200$</div>
-                  </il>
-                  <il class="price__service"
-                    ><div class="price__name">Лечение десен</div>
-                    <div class="price__cost">80$</div>
-                  </il>
-                  <il class="price__service"
-                    ><div class="price__name">Дизайн улыбки</div>
-                    <div class="price__cost">160$</div>
-                  </il>
-                  <il class="price__service"
-                    ><div class="price__name">Сознательная седация</div>
-                    <div class="price__cost">200$</div>
-                  </il>
-                  <il class="price__service"
-                    ><div class="price__name">Апноэ во сне</div>
-                    <div class="price__cost">150$</div>
-                  </il>
+                  <li class="price__service">
+                    <h4 class="price__name">Отбеливание зубов</h4>
+                    <h5 class="price__cost">120$</h5>
+                  </li>
+                  <li class="price__service">
+                    <h4 class="price__name">Имплантационная стоматология</h4>
+                    <h5 class="price__cost">200$</h5>
+                  </li>
+                  <li class="price__service">
+                    <h4 class="price__name">Лечение десен</h4>
+                    <h5 class="price__cost">80$</h5>
+                  </li>
+                  <li class="price__service">
+                    <h4 class="price__name">Дизайн улыбки</h4>
+                    <h5 class="price__cost">160$</h5>
+                  </li>
+                  <li class="price__service">
+                    <h4 class="price__name">Сознательная седация</h4>
+                    <h5 class="price__cost">200$</h5>
+                  </li>
+                  <li class="price__service">
+                    <h4 class="price__name">Апноэ во сне</h4>
+                    <h5 class="price__cost">150$</h5>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -309,13 +353,13 @@
         </div>
       </section>
       
-      <section class="reviews">
+      <section id="reviews" class="reviews">
         <div class="container text-center h-100">
           <div class="row align-items-center h-100">
             <div class="col-lg-12 align-self-center">
               <div class="reviews__carousel">
                 <div class="reviews__item">
-                  <div class="reviews__title">Что говорят наши клиенты</div>
+                  <h3 class="reviews__title">Что говорят наши клиенты</h3>
                   <div class="reviews__wrapper">
                     <div class="reviews__img">
                       <picture>
@@ -409,8 +453,8 @@
           <div class="row align-items-center h-100">
             <div class="col-md-12 col-lg-6">
               <div class="recall__form">
-                <div class="recall__title">Записаться на прием</div>
-                <form id="consultation-form" class="recall__table" action="#">
+                <h2 class="recall__title">Записаться на прием</h2>
+                <form data-form class="recall__table" action="#">
                   <input name="name" placeholder="Ваше имя" type="text" />
                   <input name="phone" placeholder="Ваш телефон" />
       
@@ -436,23 +480,50 @@
       
     </main>
     <footer>
-      <!-- <footer>
-        <div class="container text-center">
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-            <div class="col">Column</div>
-            <div class="col">Column</div>
-            <div class="col">Column</div>
-            <div class="col">Column</div>
+      <section class="footer">
+        <div class="container h-75 text-center">
+          <div class="row align-items-center h-100">
+            <div class="footer__info col-md-12 col-lg-4">
+              <h3 class="footer__title">Наши услуги</h3>
+              <h4 class="footer__line">Отбеливание зубов</h4>
+              <h4 class="footer__line">Лечение десен</h4>
+              <h4 class="footer__line">Апноэ во сне</h4>
+              <h4 class="footer__line">Реставрации</h4>
+              <h4 class="footer__line">Дизайн улыбки</h4>
+              <h4 class="footer__line">Корневой канал</h4>
+              <h4 class="footer__line">Имплантационная стоматология</h4>
+              <h4 class="footer__line">Сознательная седация</h4>
+              <h4 class="footer__line">Ортодонтия</h4>
+            </div>
+            <div id="data-info" class="footer__info col-md-12 col-lg-4">
+              <h3 class="footer__title">Наши стоматологи</h3>
+              <h4 class="footer__line">Игорь Протопский</h4>
+              <h4 class="footer__line">Олег Григоревич</h4>
+              <h4 class="footer__line">София Грин</h4>
+              <h4 class="footer__line">Мария Александровна</h4>
+            </div>
+            <div class="footer__info col-md-12 col-lg-4">
+              <h3 class="footer__title">Часы работы</h3>
+              <h4 class="footer__line">Понедельник: 8:30 - 19:00</h4>
+              <h4 class="footer__line">Вторник: 8:00 - 19:00</h4>
+              <h4 class="footer__line">Среда: 8:00 - 19:00</h4>
+              <h4 class="footer__line">Пятница: 10:00 - 16:00</h4>
+              <h4 class="footer__line">Суббота: выходной</h4>
+              <h4 class="footer__line">Воскресенье: выходной</h4>
+            </div>
+            <div class="col-lg-12">
+              <div class="footer__copy">2022 - 2023 © Dental Tooth Все права защищены</div>
+            </div>
           </div>
         </div>
-      </footer> -->
+      </section>
       
     </footer>
     <div class="modal">
       <div class="recall__form-modal">
         <div data-close class="modal__close">&times;</div>
         <div class="recall__title">Записаться на прием</div>
-        <form id="consultation-form" class="recall__table" action="#">
+        <form data-form class="recall__table" action="#">
           <input name="name" placeholder="Ваше имя" type="text" />
           <input name="phone" placeholder="Ваш телефон" />
           <button class="btn__recall">Записаться на прием</button>
@@ -464,9 +535,9 @@
     </div>
     
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"

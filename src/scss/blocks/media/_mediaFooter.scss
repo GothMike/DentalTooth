@@ -1,0 +1,29 @@
+@media (max-width: 992px) {
+  .footer {
+    height: 1200px;
+    #data-info {
+      border-top: 1px solid rgba(180, 180, 180, 0.35);
+      border-bottom: 1px solid rgba(180, 180, 180, 0.35);
+      border-left: none;
+      border-right: none;
+      padding-bottom: 15px;
+    }
+    &__info {
+      margin: 15px 0;
+    }
+    &__copy {
+      padding-top: 30px;
+    }
+    &__info {
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .footer {
+    &__copy {
+      font-size: 12px;
+    }
+  }
+}
